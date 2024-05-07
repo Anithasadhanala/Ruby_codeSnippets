@@ -1,7 +1,7 @@
 print "--------------------------------------\n"
-a  = gets.chomp().to_i
+a  = ["slkf","fdfks"]
 
-def function(a,b)
-    return a+b
+for i in a do
+    puts(i)
 end
-puts(function(a,a+1))
+

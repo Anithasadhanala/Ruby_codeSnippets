@@ -33,6 +33,11 @@ ceiling = num.ceil()
 flooring = num.floor()
 sqareRoot = Math.sqrt(num)
 log = Math.sqrt(num)
+int_max = 2147483647
+int_max = (2**31)-1
+int_min = -2147483648
+int_min = -(2**31)
+
 
 
 # taking input from the user(all inputs are strings like pyn)
@@ -56,6 +61,7 @@ num = a-b
 num = a*b
 num = a/b
 num = a%b
+num = a**b
 num = a && b
 num = a || b
 num = a > b
@@ -102,12 +108,28 @@ for i in (1..100).to_a #here 100 is also included
 end
 
 
+for i in arr do
+    puts(i)
+end
+
 # functions in ruby
 def summation(a,b)
     return a+b
 end
 
 puts(summation(a,b))
+
+
+
+# array functionalities
+
+arr = gets().chomp().split().map(&:to_i) #arr int, input from user in single line
+mini = arr.min()
+maxi = arr.max()
+mini = min(a,b)
+maxi = max(a,b)
+
+
 
 
 
